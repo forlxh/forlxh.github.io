@@ -86,18 +86,18 @@
 
 
 
-<meta name="description" content="剑指offer面试题6–从尾到头打印链表 输入一个链表的头节点，从尾到头打印链表每个节点的值。  使用栈我的做法：典型的后进先出，使用栈，顺序遍历一遍链表，依次将每个值入栈。得到的就是尾节点在前，头节点在后的列表。 123456789101112131415161718192021222324252627282930package Chap2;import java.util.LinkedList">
+<meta name="description" content="剑指offer面试题9–两个栈实现队列 用两个栈来实现一个队列，完成队列的push和pop操作。队列中的元素为int类型。  刚开始两个栈都是空的，要进队列，可以将元素压入任何一个栈，不妨就压入stack1中，我们知道元素在栈中是后进先出的，因此要出列需要删除stack1最底部的元素，此时stack2派上用场了，将stack1的元素再压入stack2中，现在元素的排列变成了原来插入的顺序，要出列的">
 <meta name="keywords" content="java,面试,剑指offer">
 <meta property="og:type" content="article">
-<meta property="og:title" content="剑指offer面试题6--从尾到头打印链表">
-<meta property="og:url" content="http://forlxh.com/2019/09/17/剑指offer面试题6-从尾到头打印链表/index.html">
+<meta property="og:title" content="剑指offer面试题9--两个栈实现队列">
+<meta property="og:url" content="http://forlxh.com/2019/09/17/剑指offer面试题9-两个栈实现队列/index.html">
 <meta property="og:site_name" content="香槟伴乐透">
-<meta property="og:description" content="剑指offer面试题6–从尾到头打印链表 输入一个链表的头节点，从尾到头打印链表每个节点的值。  使用栈我的做法：典型的后进先出，使用栈，顺序遍历一遍链表，依次将每个值入栈。得到的就是尾节点在前，头节点在后的列表。 123456789101112131415161718192021222324252627282930package Chap2;import java.util.LinkedList">
+<meta property="og:description" content="剑指offer面试题9–两个栈实现队列 用两个栈来实现一个队列，完成队列的push和pop操作。队列中的元素为int类型。  刚开始两个栈都是空的，要进队列，可以将元素压入任何一个栈，不妨就压入stack1中，我们知道元素在栈中是后进先出的，因此要出列需要删除stack1最底部的元素，此时stack2派上用场了，将stack1的元素再压入stack2中，现在元素的排列变成了原来插入的顺序，要出列的">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-09-17T15:13:05.478Z">
+<meta property="og:updated_time" content="2019-09-17T16:04:18.259Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="剑指offer面试题6--从尾到头打印链表">
-<meta name="twitter:description" content="剑指offer面试题6–从尾到头打印链表 输入一个链表的头节点，从尾到头打印链表每个节点的值。  使用栈我的做法：典型的后进先出，使用栈，顺序遍历一遍链表，依次将每个值入栈。得到的就是尾节点在前，头节点在后的列表。 123456789101112131415161718192021222324252627282930package Chap2;import java.util.LinkedList">
+<meta name="twitter:title" content="剑指offer面试题9--两个栈实现队列">
+<meta name="twitter:description" content="剑指offer面试题9–两个栈实现队列 用两个栈来实现一个队列，完成队列的push和pop操作。队列中的元素为int类型。  刚开始两个栈都是空的，要进队列，可以将元素压入任何一个栈，不妨就压入stack1中，我们知道元素在栈中是后进先出的，因此要出列需要删除stack1最底部的元素，此时stack2派上用场了，将stack1的元素再压入stack2中，现在元素的排列变成了原来插入的顺序，要出列的">
 
 
 
@@ -127,13 +127,13 @@
 
 
 
-  <link rel="canonical" href="http://forlxh.com/2019/09/17/剑指offer面试题6-从尾到头打印链表/">
+  <link rel="canonical" href="http://forlxh.com/2019/09/17/剑指offer面试题9-两个栈实现队列/">
 
 
 
 
 
-  <title>剑指offer面试题6--从尾到头打印链表 | 香槟伴乐透</title>
+  <title>剑指offer面试题9--两个栈实现队列 | 香槟伴乐透</title>
   
 
 
@@ -292,7 +292,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://forlxh.com/2019/09/17/剑指offer面试题6-从尾到头打印链表/">
+    <link itemprop="mainEntityOfPage" href="http://forlxh.com/2019/09/17/剑指offer面试题9-两个栈实现队列/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="forlxh">
@@ -309,7 +309,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">剑指offer面试题6--从尾到头打印链表</h1>
+          <h1 class="post-title" itemprop="name headline">剑指offer面试题9--两个栈实现队列</h1>
         
 
         <div class="post-meta">
@@ -321,7 +321,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-17T17:19:47+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-17T23:21:29+08:00">
                 2019-09-17
               </time>
             
@@ -380,7 +380,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  471
+                  1k
                 </span>
               
 
@@ -396,7 +396,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1
+                  4
                 </span>
               
             </div>
@@ -417,19 +417,27 @@
       
 
       
-        <h3 id="剑指offer面试题6–从尾到头打印链表"><a href="#剑指offer面试题6–从尾到头打印链表" class="headerlink" title="剑指offer面试题6–从尾到头打印链表"></a>剑指offer面试题6–从尾到头打印链表</h3><blockquote>
-<p><strong>输入一个链表的头节点，从尾到头打印链表每个节点的值。</strong></p>
+        <h3 id="剑指offer面试题9–两个栈实现队列"><a href="#剑指offer面试题9–两个栈实现队列" class="headerlink" title="剑指offer面试题9–两个栈实现队列"></a>剑指offer面试题9–两个栈实现队列</h3><blockquote>
+<p><strong>用两个栈来实现一个队列，完成队列的push和pop操作。队列中的元素为int类型。</strong></p>
 </blockquote>
-<h4 id="使用栈"><a href="#使用栈" class="headerlink" title="使用栈"></a>使用栈</h4><p>我的做法：典型的后进先出，使用栈，顺序遍历一遍链表，依次将每个值入栈。得到的就是尾节点在前，头节点在后的列表。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> Chap2;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.LinkedList;</span><br><span class="line"><span class="keyword">import</span> java.util.ArrayList;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">FromTail2Head</span> </span>&#123;</span><br><span class="line">    <span class="comment">// 节点类的定义</span></span><br><span class="line">    <span class="keyword">private</span> <span class="class"><span class="keyword">class</span> <span class="title">ListNode</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> val;</span><br><span class="line">        ListNode next = <span class="keyword">null</span>;</span><br><span class="line"></span><br><span class="line">        ListNode(<span class="keyword">int</span> val) &#123;</span><br><span class="line">            <span class="keyword">this</span>.val = val;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 更推荐使用栈，正序压入，尾节点就在最前面了</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> listNode 链表的头结点</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> 从尾到头排列的结点</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> ArrayList&lt;Integer&gt; <span class="title">printListFromTailToHead</span><span class="params">(ListNode listNode)</span> </span>&#123;</span><br><span class="line">        LinkedList&lt;Integer&gt; stack = <span class="keyword">new</span> LinkedList&lt;&gt;();</span><br><span class="line">        <span class="keyword">for</span> (ListNode node = listNode; node != <span class="keyword">null</span>; node = node.next) &#123;</span><br><span class="line">            stack.push(node.val);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> ArrayList&lt;&gt;(stack);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>刚开始两个栈都是空的，要进队列，可以将元素压入任何一个栈，不妨就压入stack1中，我们知道元素在栈中是后进先出的，因此要出列需要删除stack1最底部的元素，此时stack2派上用场了，将stack1的元素再压入stack2中，现在元素的排列变成了原来插入的顺序，要出列的元素到了栈顶，要完成出列操作就很方便了。若要继续出列，只要stack2不为空，只需继续从stack2中出栈即可，<strong>因为stack2中的栈顶元素就是最先入列的元素。若stack2为空，就将stack1中的元素压入到stack2后，再弹出栈顶元素。</strong>如果要入列，就直接压入stack1中。</p>
+<p>总结一下就是：</p>
+<ul>
+<li>stack1专门用于进入队列</li>
+<li>stack2专门用于出队列</li>
+<li>出列操作。stack2不为空就直接出列；为空就将stack1中所有元素压入stack2中，再弹出栈顶元素。</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TwoStackImpQueue</span></span>&#123;</span><br><span class="line">    <span class="keyword">private</span> LinkedList&lt;Integer&gt; stack1 = <span class="keyword">new</span> LinkedList&lt;&gt;();</span><br><span class="line">    <span class="keyword">private</span> LinkedList&lt;Integer&gt; stack2 = <span class="keyword">new</span> LinkedList&lt;&gt;();</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">enqueue</span><span class="params">(<span class="keyword">int</span> node)</span></span>&#123;</span><br><span class="line">        <span class="comment">// stack1专门用于进入队列</span></span><br><span class="line">        stack1.push(node);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">dequeue</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(stack1.isEmpty() &amp;&amp;stack2.isEmpty())&#123;</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> RuntimeException(<span class="string">"队列为空"</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(stack2.isEmpty())&#123;</span><br><span class="line">            <span class="keyword">while</span>(!stack1.isEmpty())&#123;</span><br><span class="line">                stack2.push(stack1.pop());</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> stack2.pop();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>使用了“万能的”LinkedList，将其当栈使用。</p>
-<h4 id="使用递归"><a href="#使用递归" class="headerlink" title="使用递归"></a>使用递归</h4><p>递归的本质也是栈（系统创建的），下面采用递归的解法。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 利用递归，先递归到最后一个结点后开始依次返回。链表如果很长不适合用递归，递归深度将很大</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 这是一个类成员变量</span></span><br><span class="line"><span class="keyword">private</span> ArrayList&lt;Integer&gt; a = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> ArrayList&lt;Integer&gt; <span class="title">printListFromTailToHead2</span><span class="params">(ListNode listNode)</span> </span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (listNode != <span class="keyword">null</span>) &#123;</span><br><span class="line">    printListFromTailToHead(listNode.next);</span><br><span class="line">    a.add(listNode.val);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> a;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="相关题目–两个队列实现栈"><a href="#相关题目–两个队列实现栈" class="headerlink" title="相关题目–两个队列实现栈"></a>相关题目–两个队列实现栈</h3><p>刚开始两个队列都为空，进栈时，可以进入任意一个队列。不妨默认进入<code>Queue a</code>。后续进栈时操作，哪个队列不为空（将看到，另外一个队列肯定为空）就进入该队列中。出栈操作，<strong>最后进入队列的要先出栈</strong>，而此时要出栈的元素在队列最后，但是队列只支持在队列头删除，因此将除了最后一个元素之外的所有元素都删除并复制一份到另一个队列<code>Queue another</code>，然后出列最后一个元素即可。此时<code>Queue a</code>成了空队列。之后每次出列操作都像上述以样：将不为空的队列中除最后一个元素的其余元素删除并复制到另一个空队列中，再删除原队列中唯一一个元素并弹出。<strong>每次出栈操作后，总有一个队列是空的。又因为进栈时也是进入不为空的那个队列，因此进出栈操作时总有一个队列是空的。</strong></p>
+<p>这两个队列不像上面的例子中有明确的分工，在两个队列实现栈的例子中，它们交替实现进栈或出栈的功能。</p>
+<p>总结一下：</p>
+<ul>
+<li>进栈，进入不为空的那个队列中</li>
+<li>出栈，将不为空队列中除倒数最后一个元素外的其余元素移动到另一个空队列中，紧接着弹出原队列的最后一个元素。</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.LinkedList;</span><br><span class="line"><span class="keyword">import</span> java.util.Queue;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 两个队列实现一个栈</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TwoQueueImpStack</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> Queue&lt;Integer&gt; a;</span><br><span class="line">    <span class="keyword">private</span> Queue&lt;Integer&gt; another;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">TwoQueueImpStack</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.a = <span class="keyword">new</span> LinkedList&lt;&gt;();</span><br><span class="line">        <span class="keyword">this</span>.another = <span class="keyword">new</span> LinkedList&lt;&gt;();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">push</span><span class="params">(<span class="keyword">int</span> node)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (a.isEmpty() &amp;&amp; another.isEmpty()) &#123;</span><br><span class="line">            a.offer(node);</span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (!a.isEmpty())&#123;</span><br><span class="line">            a.offer(node);</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            another.offer(node);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">pop</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (a.isEmpty() &amp;&amp; another.isEmpty()) &#123;</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> RuntimeException(<span class="string">"栈已空"</span>);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (!another.isEmpty()) &#123;</span><br><span class="line">            <span class="keyword">int</span> size = another.size();</span><br><span class="line">            <span class="comment">// 除了最后一个元素，其他都删除并复制到另外一个队列中</span></span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; size - <span class="number">1</span>; i++) &#123;</span><br><span class="line">                a.offer(another.poll());</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">return</span> another.poll();</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="keyword">int</span> size = a.size();</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; size -<span class="number">1</span>; i++) &#123;</span><br><span class="line">                another.offer(a.poll());</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">return</span> a.poll();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        TwoQueueImpStack a = <span class="keyword">new</span> TwoQueueImpStack();</span><br><span class="line">        a.push(<span class="number">54</span>);</span><br><span class="line">        a.push(<span class="number">55</span>);</span><br><span class="line">        a.push(<span class="number">56</span>);</span><br><span class="line">        System.out.println(a.pop());</span><br><span class="line">        System.out.println(a.pop());</span><br><span class="line">        a.push(<span class="number">53</span>);</span><br><span class="line">        System.out.println(a.pop());</span><br><span class="line">        a.push(<span class="number">52</span>);</span><br><span class="line">        System.out.println(a.pop());</span><br><span class="line">        System.out.println(a.pop());</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>可以看到如果没到链表尾部，就不断递归，直到最后一个节点，之后开始返回，执行下一句add方法，此时第一个被添加的是尾节点，最后一步递归调用的返回（即第一次递归调用）将添加最开始的头节点。因此得到的也是从尾到头的列表。</p>
-<p>递归通常代码更简洁，但是如果<strong>链表很长时，递归调用的层级十分深，速度将大大降低。</strong>所以更推荐用第一种——栈的方法。</p>
-<hr>
 
       
     </div>
@@ -493,8 +501,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/09/17/剑指offer面试题5-替换空格/" rel="next" title="剑指offer面试题5--替换空格">
-                <i class="fa fa-chevron-left"></i> 剑指offer面试题5--替换空格
+              <a href="/2019/09/17/剑指offer面试题8-二叉树中序遍历的下一个节点/" rel="next" title="剑指offer面试题8--二叉树中序遍历的下一个节点">
+                <i class="fa fa-chevron-left"></i> 剑指offer面试题8--二叉树中序遍历的下一个节点
               </a>
             
           </div>
@@ -502,10 +510,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/09/17/剑指offer面试题7-重建二叉树/" rel="prev" title="剑指offer面试题7--重建二叉树">
-                剑指offer面试题7--重建二叉树 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -675,7 +679,7 @@ var jiathis_config={
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#剑指offer面试题6–从尾到头打印链表"><span class="nav-number">1.</span> <span class="nav-text">剑指offer面试题6–从尾到头打印链表</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#使用栈"><span class="nav-number">1.1.</span> <span class="nav-text">使用栈</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#使用递归"><span class="nav-number">1.2.</span> <span class="nav-text">使用递归</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#剑指offer面试题9–两个栈实现队列"><span class="nav-number">1.</span> <span class="nav-text">剑指offer面试题9–两个栈实现队列</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#相关题目–两个队列实现栈"><span class="nav-number">2.</span> <span class="nav-text">相关题目–两个队列实现栈</span></a></li></ol></div>
             
 
           </div>
