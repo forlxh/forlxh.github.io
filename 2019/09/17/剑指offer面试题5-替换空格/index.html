@@ -86,18 +86,18 @@
 
 
 
-<meta name="description" content="剑指offer面试题5–替换空格 12&amp;gt; 请实现一个函数，将一个字符串中的空格替换成“%20”。例如，当字符串为We Are Happy.则经过替换之后的字符串为We%20Are%20Happy。&amp;gt;  使用Java内置方法我的做法，由于使用Java语言，很容易想到使用库函数…遍历每个字符，如果遇到空格，就直接使用replace方法替换。 123456789101112131415161">
+<meta name="description" content="剑指offer面试题5–替换空格 请实现一个函数，将一个字符串中的空格替换成“%20”。例如，当字符串为We Are Happy.则经过替换之后的字符串为We%20Are%20Happy。  使用Java内置方法我的做法，由于使用Java语言，很容易想到使用库函数…遍历每个字符，如果遇到空格，就直接使用replace方法替换。 123456789101112131415161718/** * 遍历">
 <meta name="keywords" content="java,面试,剑指offer">
 <meta property="og:type" content="article">
 <meta property="og:title" content="剑指offer面试题5--替换空格">
 <meta property="og:url" content="http://forlxh.com/2019/09/17/剑指offer面试题5-替换空格/index.html">
 <meta property="og:site_name" content="香槟伴乐透">
-<meta property="og:description" content="剑指offer面试题5–替换空格 12&amp;gt; 请实现一个函数，将一个字符串中的空格替换成“%20”。例如，当字符串为We Are Happy.则经过替换之后的字符串为We%20Are%20Happy。&amp;gt;  使用Java内置方法我的做法，由于使用Java语言，很容易想到使用库函数…遍历每个字符，如果遇到空格，就直接使用replace方法替换。 123456789101112131415161">
+<meta property="og:description" content="剑指offer面试题5–替换空格 请实现一个函数，将一个字符串中的空格替换成“%20”。例如，当字符串为We Are Happy.则经过替换之后的字符串为We%20Are%20Happy。  使用Java内置方法我的做法，由于使用Java语言，很容易想到使用库函数…遍历每个字符，如果遇到空格，就直接使用replace方法替换。 123456789101112131415161718/** * 遍历">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-09-17T07:19:37.063Z">
+<meta property="og:updated_time" content="2019-09-17T15:13:16.094Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="剑指offer面试题5--替换空格">
-<meta name="twitter:description" content="剑指offer面试题5–替换空格 12&amp;gt; 请实现一个函数，将一个字符串中的空格替换成“%20”。例如，当字符串为We Are Happy.则经过替换之后的字符串为We%20Are%20Happy。&amp;gt;  使用Java内置方法我的做法，由于使用Java语言，很容易想到使用库函数…遍历每个字符，如果遇到空格，就直接使用replace方法替换。 123456789101112131415161">
+<meta name="twitter:description" content="剑指offer面试题5–替换空格 请实现一个函数，将一个字符串中的空格替换成“%20”。例如，当字符串为We Are Happy.则经过替换之后的字符串为We%20Are%20Happy。  使用Java内置方法我的做法，由于使用Java语言，很容易想到使用库函数…遍历每个字符，如果遇到空格，就直接使用replace方法替换。 123456789101112131415161718/** * 遍历">
 
 
 
@@ -418,7 +418,7 @@
 
       
         <h3 id="剑指offer面试题5–替换空格"><a href="#剑指offer面试题5–替换空格" class="headerlink" title="剑指offer面试题5–替换空格"></a>剑指offer面试题5–替换空格</h3><blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt; 请实现一个函数，将一个字符串中的空格替换成“%20”。例如，当字符串为We Are Happy.则经过替换之后的字符串为We%20Are%20Happy。</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+<p><strong>请实现一个函数，将一个字符串中的空格替换成“%20”。例如，当字符串为We Are Happy.则经过替换之后的字符串为We%20Are%20Happy。</strong></p>
 </blockquote>
 <h4 id="使用Java内置方法"><a href="#使用Java内置方法" class="headerlink" title="使用Java内置方法"></a>使用Java内置方法</h4><p>我的做法，由于使用Java语言，很容易想到使用库函数…遍历每个字符，如果遇到空格，就直接使用replace方法替换。</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 遍历每一个字符，如果是空格就使用Java库函数replace替换</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> str 原字符串</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return</span> 替换空格后的字符串</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> String <span class="title">replaceSpace2</span><span class="params">(StringBuffer str)</span> </span>&#123;</span><br><span class="line">  	<span class="keyword">if</span> (str == <span class="keyword">null</span>) &#123;</span><br><span class="line">    	<span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">  	&#125;</span><br><span class="line"></span><br><span class="line">  	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; str.length(); i++) &#123;</span><br><span class="line">    	<span class="keyword">if</span> (str.charAt(i) == <span class="string">' '</span>) &#123;</span><br><span class="line">      	str.replace(i, i + <span class="number">1</span>, <span class="string">"%20"</span>);</span><br><span class="line">    	&#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> str.toString();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
