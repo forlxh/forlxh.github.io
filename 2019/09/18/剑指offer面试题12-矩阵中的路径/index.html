@@ -86,18 +86,18 @@
 
 
 
-<meta name="description" content="剑指offer面试题5–替换空格 请实现一个函数，将一个字符串中的空格替换成“%20”。例如，当字符串为We Are Happy.则经过替换之后的字符串为We%20Are%20Happy。  使用Java内置方法我的做法，由于使用Java语言，很容易想到使用库函数…遍历每个字符，如果遇到空格，就直接使用replace方法替换。 123456789101112131415161718/** * 遍历">
+<meta name="description" content="这是一个个人博客，主要是个人平时学习的一个知识积累，做笔记的一个平台">
 <meta name="keywords" content="java,面试,剑指offer">
 <meta property="og:type" content="article">
-<meta property="og:title" content="剑指offer面试题5--替换空格">
-<meta property="og:url" content="http://forlxh.com/2019/09/17/剑指offer面试题5-替换空格/index.html">
+<meta property="og:title" content="剑指offer面试题12--矩阵中的路径">
+<meta property="og:url" content="http://forlxh.com/2019/09/18/剑指offer面试题12-矩阵中的路径/index.html">
 <meta property="og:site_name" content="香槟伴乐透">
-<meta property="og:description" content="剑指offer面试题5–替换空格 请实现一个函数，将一个字符串中的空格替换成“%20”。例如，当字符串为We Are Happy.则经过替换之后的字符串为We%20Are%20Happy。  使用Java内置方法我的做法，由于使用Java语言，很容易想到使用库函数…遍历每个字符，如果遇到空格，就直接使用replace方法替换。 123456789101112131415161718/** * 遍历">
+<meta property="og:description" content="这是一个个人博客，主要是个人平时学习的一个知识积累，做笔记的一个平台">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-09-17T15:13:16.094Z">
+<meta property="og:updated_time" content="2019-09-18T01:36:31.408Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="剑指offer面试题5--替换空格">
-<meta name="twitter:description" content="剑指offer面试题5–替换空格 请实现一个函数，将一个字符串中的空格替换成“%20”。例如，当字符串为We Are Happy.则经过替换之后的字符串为We%20Are%20Happy。  使用Java内置方法我的做法，由于使用Java语言，很容易想到使用库函数…遍历每个字符，如果遇到空格，就直接使用replace方法替换。 123456789101112131415161718/** * 遍历">
+<meta name="twitter:title" content="剑指offer面试题12--矩阵中的路径">
+<meta name="twitter:description" content="这是一个个人博客，主要是个人平时学习的一个知识积累，做笔记的一个平台">
 
 
 
@@ -127,13 +127,13 @@
 
 
 
-  <link rel="canonical" href="http://forlxh.com/2019/09/17/剑指offer面试题5-替换空格/">
+  <link rel="canonical" href="http://forlxh.com/2019/09/18/剑指offer面试题12-矩阵中的路径/">
 
 
 
 
 
-  <title>剑指offer面试题5--替换空格 | 香槟伴乐透</title>
+  <title>剑指offer面试题12--矩阵中的路径 | 香槟伴乐透</title>
   
 
 
@@ -292,7 +292,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://forlxh.com/2019/09/17/剑指offer面试题5-替换空格/">
+    <link itemprop="mainEntityOfPage" href="http://forlxh.com/2019/09/18/剑指offer面试题12-矩阵中的路径/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="forlxh">
@@ -309,7 +309,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">剑指offer面试题5--替换空格</h1>
+          <h1 class="post-title" itemprop="name headline">剑指offer面试题12--矩阵中的路径</h1>
         
 
         <div class="post-meta">
@@ -321,8 +321,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-17T15:17:25+08:00">
-                2019-09-17
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-18T09:35:46+08:00">
+                2019-09-18
               </time>
             
 
@@ -380,7 +380,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1.3k
+                  0
                 </span>
               
 
@@ -396,7 +396,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  5
+                  1
                 </span>
               
             </div>
@@ -417,37 +417,7 @@
       
 
       
-        <h3 id="剑指offer面试题5–替换空格"><a href="#剑指offer面试题5–替换空格" class="headerlink" title="剑指offer面试题5–替换空格"></a>剑指offer面试题5–替换空格</h3><blockquote>
-<p><strong>请实现一个函数，将一个字符串中的空格替换成“%20”。例如，当字符串为We Are Happy.则经过替换之后的字符串为We%20Are%20Happy。</strong></p>
-</blockquote>
-<h4 id="使用Java内置方法"><a href="#使用Java内置方法" class="headerlink" title="使用Java内置方法"></a>使用Java内置方法</h4><p>我的做法，由于使用Java语言，很容易想到使用库函数…遍历每个字符，如果遇到空格，就直接使用replace方法替换。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 遍历每一个字符，如果是空格就使用Java库函数replace替换</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> str 原字符串</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return</span> 替换空格后的字符串</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> String <span class="title">replaceSpace2</span><span class="params">(StringBuffer str)</span> </span>&#123;</span><br><span class="line">  	<span class="keyword">if</span> (str == <span class="keyword">null</span>) &#123;</span><br><span class="line">    	<span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">  	&#125;</span><br><span class="line"></span><br><span class="line">  	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; str.length(); i++) &#123;</span><br><span class="line">    	<span class="keyword">if</span> (str.charAt(i) == <span class="string">' '</span>) &#123;</span><br><span class="line">      	str.replace(i, i + <span class="number">1</span>, <span class="string">"%20"</span>);</span><br><span class="line">    	&#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> str.toString();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>当然如果你还知道String类有个方法叫<code>replaceAll</code>，那实现就更简洁了。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 更加简洁的库函数方法</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> String <span class="title">replaceSpace3</span><span class="params">(StringBuffer str)</span> </span>&#123;</span><br><span class="line">  	<span class="keyword">return</span> str.toString().replaceAll(<span class="string">"\\s"</span>, <span class="string">"%20"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>一行就完事儿，<code>\\s</code>是正则表达式，表示一个空格。</p>
-<h4 id="从后往前扫描"><a href="#从后往前扫描" class="headerlink" title="从后往前扫描"></a>从后往前扫描</h4><p>本着学习的态度（而不是完成任务），上面的方法虽然简洁，但封装过好的方法掩藏了算法的实现细节。现在我们自己来实现一种比较底层的方法。</p>
-<p>按照一般思维，总习惯从左往右处理字符串。当遇见第一个空格时，其后的所有字符都需要右移两个位置；当遇见第二个空格时，其后的字符又要右移…因此很多字符被移动了不止一次。能不能减少移动的次数呢？<strong>从前往后扫描要移动那么多次，不妨反过来从后往前扫描试试。</strong></p>
-<ul>
-<li>先遍历一遍原字符串，统计空格字符的个数。</li>
-<li>由于要将空格（一个字符）变成<code>%20</code>（三个字符），所以需要将原字符串增长<code>2 * 空格数</code></li>
-<li>设置两个指针，一个指针oldP指向原字符串的末尾；另一个指针newP指向增长后的新字符串末尾。不断将oldP处的字符移动到newP处，然后两个指针都要左移；如果oldP处字符是空格，就在newP处设置三个字符：按顺序分别是<code>0、2、%</code>，同样的两个指针相应的左移。</li>
-</ul>
-<p>按照上面的算法流程，写出如下代码。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> Chap2;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ReplaceSpace</span> </span>&#123;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 库函数很方便，但是也要理解原理，所以掌握下面的方法是很有必要的。</span></span><br><span class="line"><span class="comment">     * 1、统计空格数目</span></span><br><span class="line"><span class="comment">     * 2、增长原字符串的长度</span></span><br><span class="line"><span class="comment">     * 3、两个指针，一个指向原来字符串末尾，一个指向新字符串末尾。从后往前扫描字符串，并左移指针</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">replaceSpace</span><span class="params">(StringBuffer str)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (str == <span class="keyword">null</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 统计空格个数</span></span><br><span class="line">        <span class="keyword">int</span> spaceNum = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>;i &lt; str.length();i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (str.charAt(i) == <span class="string">' '</span>) &#123;</span><br><span class="line">                spaceNum++;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 原来字符串的末尾指针</span></span><br><span class="line">        <span class="keyword">int</span> oldP = str.length() - <span class="number">1</span>;</span><br><span class="line">        <span class="comment">// 设置新长度</span></span><br><span class="line">        str.setLength(str.length() + <span class="number">2</span>*spaceNum);</span><br><span class="line">        <span class="comment">// 新的字符串的末尾指针</span></span><br><span class="line">        <span class="keyword">int</span> newP = str.length() - <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">while</span> (oldP &gt;=<span class="number">0</span> &amp;&amp; newP &gt; oldP) &#123;</span><br><span class="line">            <span class="keyword">if</span> (str.charAt(oldP) == <span class="string">' '</span>) &#123;</span><br><span class="line">                str.setCharAt(newP--, <span class="string">'0'</span>);</span><br><span class="line">                str.setCharAt(newP--, <span class="string">'2'</span>);</span><br><span class="line">                str.setCharAt(newP--, <span class="string">'%'</span>);</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                str.setCharAt(newP--, str.charAt(oldP));</span><br><span class="line">            &#125;</span><br><span class="line">            oldP--;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> str.toString();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>每个字符最多只会被移动一次，所以时间复杂度为O(n)。</p>
-<h4 id="相关题目"><a href="#相关题目" class="headerlink" title="相关题目"></a>相关题目</h4><p>有两个有序的数组A1和A2，A1末尾有足够空间容纳A2。实现一个函数将A2的所有数字插入到A1中，并且所有数字是有序的。</p>
-<p><strong>因为空闲的空间在A1的末尾，所以从后往前比较两个A1和A2的数字，将更大的那个移动到A1的末尾，然后左移指针，继续比较两个数组中的数。当某个数组中的元素被取完了，就直接从另外一个数组取。</strong></p>
-<p>比如下面的例子</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">A1 = [1, 2 ,4 ,7, 9, , , ...]</span><br><span class="line">A2 = [3, 5, 8, 10, 12]</span><br></pre></td></tr></table></figure>
-
-<p>假设A1的长度为10，现暂时只有5个元素，这个长度刚好能装下A2。从后往前比较A1和A2：12比9大，将12移动到A1[9]中，然后9和10继续比较，10移动到A1[8]中，9和8比较9移动到A1[7]中，如此这般直到扫描完两个数组，所有数字也都有序了。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"> <span class="keyword">package</span> Chap2;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.Arrays;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MergeTwoSortedArray</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">merge</span><span class="params">(Integer[] a, Integer[] b)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// 统计a数组中有值元素的个数</span></span><br><span class="line">        <span class="keyword">int</span> len = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>;i &lt; a.length;i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (a[i] != <span class="keyword">null</span>) &#123;</span><br><span class="line">                len++;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> pA = len-<span class="number">1</span>; <span class="comment">// 指向a数组不为空的最后一个元素末尾</span></span><br><span class="line">        <span class="keyword">int</span> pB = b.length-<span class="number">1</span>; <span class="comment">// 指向b数组不为空的最后一个元素末尾</span></span><br><span class="line">        <span class="keyword">int</span> k = len + b.length -<span class="number">1</span>; <span class="comment">// 指向归并后数组不为空的最后一个元素末尾</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">while</span> (k &gt;= <span class="number">0</span>) &#123;</span><br><span class="line">            <span class="comment">// a数组取完了，取b数组中的</span></span><br><span class="line">            <span class="keyword">if</span> (pA &lt; <span class="number">0</span>) &#123;</span><br><span class="line">                a[k--] = b[pB--];</span><br><span class="line">                <span class="comment">// b数组取完了，取a数组中的</span></span><br><span class="line">            &#125; <span class="keyword">else</span> <span class="keyword">if</span> (pB &lt; <span class="number">0</span>) &#123;</span><br><span class="line">                a[k--] = a[pA--];</span><br><span class="line">                <span class="comment">// 否则谁的大取谁的值</span></span><br><span class="line">            &#125; <span class="keyword">else</span> <span class="keyword">if</span> (a[pA] &gt; b[pB]) &#123;</span><br><span class="line">                a[k--]= a[pA--];</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                a[k--] = b[pB--];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        Integer[] a = <span class="keyword">new</span> Integer[<span class="number">10</span>];</span><br><span class="line">        Integer[] b= &#123;<span class="number">1</span>, <span class="number">3</span>, <span class="number">5</span>, <span class="number">7</span>, <span class="number">9</span>&#125;;</span><br><span class="line">        <span class="comment">// &#123;2, 4, 6, 8, 10&#125;</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">5</span>; i++) &#123;</span><br><span class="line">            a[i] = <span class="number">2</span> * i + <span class="number">2</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        merge(a, b);</span><br><span class="line">        System.out.println(Arrays.toString(a));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<hr>
-
+        
       
     </div>
     
@@ -510,8 +480,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/09/17/剑指offer面试题4-二维数组中的查找/" rel="next" title="剑指offer面试题4--二维数组中的查找">
-                <i class="fa fa-chevron-left"></i> 剑指offer面试题4--二维数组中的查找
+              <a href="/2019/09/18/剑指offer面试题11-旋转数组中的最小数字/" rel="next" title="剑指offer面试题11--旋转数组中的最小数字">
+                <i class="fa fa-chevron-left"></i> 剑指offer面试题11--旋转数组中的最小数字
               </a>
             
           </div>
@@ -520,8 +490,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/09/17/剑指offer面试题6-从尾到头打印链表/" rel="prev" title="剑指offer面试题6--从尾到头打印链表">
-                剑指offer面试题6--从尾到头打印链表 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/09/18/面向对象设计原则/" rel="prev" title="面向对象设计原则">
+                面向对象设计原则 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -600,17 +570,8 @@ var jiathis_config={
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -682,22 +643,6 @@ var jiathis_config={
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#剑指offer面试题5–替换空格"><span class="nav-number">1.</span> <span class="nav-text">剑指offer面试题5–替换空格</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#使用Java内置方法"><span class="nav-number">1.1.</span> <span class="nav-text">使用Java内置方法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#从后往前扫描"><span class="nav-number">1.2.</span> <span class="nav-text">从后往前扫描</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#相关题目"><span class="nav-number">1.3.</span> <span class="nav-text">相关题目</span></a></li></ol></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       

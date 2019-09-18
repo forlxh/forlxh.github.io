@@ -1,6 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[创建型设计模式]]></title>
+    <url>%2F2019%2F09%2F18%2F%E5%88%9B%E5%BB%BA%E5%9E%8B%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[UML类图]]></title>
+    <url>%2F2019%2F09%2F18%2FUML%E7%B1%BB%E5%9B%BE%2F</url>
+    <content type="text"><![CDATA[UML类图的相关知识泛化关系(generalization)类的继承结构表现在UML中为：泛化(generalize)与实现(realize)： 继承关系为 is-a的关系；两个对象之间如果可以用 is-a 来表示，就是继承关系：（..是..) eg：自行车是车、猫是动物 泛化关系用一条带空心箭头的直接表示；如下图表示（A继承自B） 实现关系(realize)实现关系用一条带空心箭头的虚线表示； eg：”车”为一个抽象概念，在现实中并无法直接用来定义对象；只有指明具体的子类(汽车还是自行车)，才 可以用来定义对象（”车”这个类在C++中用抽象类表示，在JAVA中有接口这个概念，更容易理解） 聚合关系(aggregation)聚合关系用一条带空心菱形箭头的直线表示，如下图表示A聚合到B上，或者说B由A组成。 聚合关系用于表示实体对象之间的关系，表示整体由部分构成的语义；例如一个部门由多个员工组成。 与组合关系不同的是，整体和部分不是强依赖的，即使整体不存在了，部分仍然存在；例如， 部门撤销了，人员不会消失，他们依然存在。 组合关系(composition)组合关系用一条带实心菱形箭头直线表示，如下图表示A组成B，或者B由A组成。 与聚合关系一样，组合关系同样表示整体由部分构成的语义；比如公司由多个部门组成。 但组合关系是一种强依赖的特殊聚合关系，如果整体不存在了，则部分也不存在了；例如， 公司不存在了，部门也将不存在了。 关联关系(association)关联关系是用一条直线表示的；它描述不同类的对象之间的结构关系；==它是一种静态关系， 通常与运行状态无关，一般由常识等因素决定的==；它一般用来定义对象之间静态的、天然的结构； 所以，关联关系是一种“强关联”的关系； 比如，乘车人和车票之间就是一种关联关系；学生和学校就是一种关联关系； ==关联关系默认不强调方向，表示对象间相互知道==；如果特别强调方向，如下图，表示A知道B，但 B不知道A； 注：在最终代码中，关联对象通常是以==成员变量的形式==实现的； 依赖关系(dependency)依赖关系是用一套带箭头的虚线表示的；如下图表示A依赖于B；他描述一个对象在运行期间会用到另一个对象的关系； 与关联关系不同的是，==它是一种临时性的关系==，通常在运行期间产生，并且随着运行时的变化； 依赖关系也可能发生变化； 显然，依赖也有方向，双向依赖是一种非常糟糕的结构，我们总是应该保持单向依赖，杜绝双向依赖的产生； 注：在最终代码中，依赖关系体现为类构造方法及类方法的==传入参数==，箭头的指向为调用关系；依赖关系除了临时知道对方外，还是==“使用”对方的方法和属性==； 类的表示：矩形框：代表一个类，类图分三层第一层显示类的名称：抽象类用斜体 第二层是类的特性：字段和属性 第三层是类的操作：方法或行为（+:public；-:private；#:protected，~:default（可省略）） ​ 斜体代表抽象，下划线代表静态 接口的表示：矩形框，顶部有《interface》]]></content>
+      <categories>
+        <category>设计模式</category>
+      </categories>
+      <tags>
+        <tag>设计模式</tag>
+        <tag>java</tag>
+        <tag>面试</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[面向对象设计原则]]></title>
+    <url>%2F2019%2F09%2F18%2F%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[剑指offer面试题12--矩阵中的路径]]></title>
+    <url>%2F2019%2F09%2F18%2F%E5%89%91%E6%8C%87offer%E9%9D%A2%E8%AF%95%E9%A2%9812-%E7%9F%A9%E9%98%B5%E4%B8%AD%E7%9A%84%E8%B7%AF%E5%BE%84%2F</url>
+    <content type="text"></content>
+      <categories>
+        <category>剑指offer</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+        <tag>面试</tag>
+        <tag>剑指offer</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[剑指offer面试题11--旋转数组中的最小数字]]></title>
+    <url>%2F2019%2F09%2F18%2F%E5%89%91%E6%8C%87offer%E9%9D%A2%E8%AF%95%E9%A2%9811-%E6%97%8B%E8%BD%AC%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E6%9C%80%E5%B0%8F%E6%95%B0%E5%AD%97%2F</url>
+    <content type="text"><![CDATA[剑指offer面试题11–旋转数组中的最小数字 把一个数组最开始的若干个元素搬到数组的末尾，我们称之为数组的旋转。 输入一个非递减排序的数组的一个旋转，输出旋转数组的最小元素。 例如数组{3,4,5,1,2}为{1,2,3,4,5}的一个旋转，该数组的最小值为1。 NOTE：给出的所有元素都大于0，若数组大小为0，请返回0。 题目给出的是非递减排序数组，所以不是严格递增的，可能有相同元素的情况。 顺序遍历我的解法：两个子数组都是递增的，只有在两个子数组的分界线处，才会有前一个字符大于后一个字符。时间复杂度为O(n) 123456789public int minNumberInRotateArray(int[] array)&#123; if(array.length == 0) return 0; for(int i = 0;i&lt;array.length-1;i++)&#123; if(array[i]&gt;array[i+1]) return array[i+1]; &#125; return array[0];&#125; 二分查找由于有序数组旋转后，被分成了两个有序的子数组，因此可以用二分查找，且左半数组的值全大于等于右半数组的值。我们要找的最小元素恰好是右半数组的第一个元素，或者说左半数组末尾后一个元素。 和二分查找一样，一个指针low指向数组首元素，一个high指向尾元素。还有一个指针mid，这里注意：mid不是要和哪个特定的值比较来缩小范围，根据旋转数组的特点，我们始终将mid和high处的值比较。分三种情况 array[mid] &gt; array[high];此时mid一定还处于左半数组中，而要找的最小值在右半数组中，最小值肯定在mid的右边，所以可以直接将low移动到mid的下一个位置，即low = mid + 1。举个例子{3, 4, 5, 1, 2}，mid处的5比high处的2大，直接更新low = 3，数组被缩小到{1, 2} array[mid] &lt; array[high];此时mid一定处于右半数组中，最小值可能在mid处也可能在mid的左边。所以high只能缩小到mid处，即high = low。举个例子{4, 5, 1, 2, 3}，mid处的1小于high处的3，只能将high移动到1处，数组缩小为{4, 5, 1}，如果像上面类似令high = mid - 1，最小值再这个例子中就被跳过了！ array[mid] == array[high];此时无法分辨mid处于左半数组还是右半数组。比如{1, 0, 1, 1, 1}和{1, 1, 1, 0, 1}都是数组{0, 1, 1, 1, 1}的旋转数组。此时mid处和high处的值一样，若根据low缩小范围，对于{1, 0, 1, 1, 1}最小值将被跳过；如果根据high缩小范围，对于{1, 1, 1, 0, 1}最小值也会被跳过。此时的处理方法是暂时放弃二分查找，既然mid处和high处值相同，那么让high--，让mid和high的前一个值继续比较。如果mid和high处都是最小值，就算放弃了high最后还是会在mid处找到最小值。 只要low &lt; high(不含等于)，就不断重复上面过程，最后将范围缩小到只有一个元素后，low == high跳出循环。其实low == high时候还进入循环，也没有错，此时只会造成high–，而我们返回的是array[low]，值不会影响，但是何必进行这次无意义的比较呢。 根据上面的描述已经可以写出代码了。 1234567891011121314151617181920public class MinNumberInRotateArray&#123; public int minNumberInRotateArray(int[] array)&#123; if(array == null || array.length == 0)&#123; return 0; &#125; int low = 0; int high = array.length-1; while(low&lt;high)&#123; int mid = low+(high-low)/2; if(array[mind]&gt;array[high]) low = mid+1; else if(array[mid]&lt;array[high]) high = mid; else high--; &#125; // low == high时退出循环并返回 return array[low]; &#125;&#125; 时间复杂度为O(lg n)。 上面始终将mid和high比较，可不可以mid和low比较呢，可以但是和与high比较相比更麻烦。 试想如果最后范围缩小到剩下{1, 2}此时array[low] == array[mid]，如果low++就跳过最小元素了，此种情况可以写一个min(int low, int high)方法，直接返回[low, high]范围内的最小值。比起用high来和mid比较，麻烦了不少。]]></content>
+      <categories>
+        <category>剑指offer</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+        <tag>面试</tag>
+        <tag>剑指offer</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[剑指offer面试题10--斐波那契数列]]></title>
+    <url>%2F2019%2F09%2F18%2F%E5%89%91%E6%8C%87offer%E9%9D%A2%E8%AF%95%E9%A2%9810-%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0%E5%88%97%2F</url>
+    <content type="text"><![CDATA[剑指offer面试题10–斐波那契数列 现在要求输入一个整数n，请你输出斐波那契数列的第n项。 我想到的是迭代法，从底向上的方法：先得到f(0)、f(1)的值，然后根据这两个值计算序列后面的值。 迭代法123456789101112131415public class Fibonacci&#123; //推荐迭代法 public static int fib(int n)&#123; if(n&lt;=0) return 0; int a = 0; int b = 1; while(n&gt;0)&#123; b = a + b; a = b - a; n--; &#125; return a; &#125;&#125; 当然还有递归法，时空开销较大，有大量重复计算，不推荐。 递归法1234567public static int fib2(int n)&#123; if(n&lt;=0) return 0; if(n==1) return 1; return fib2(n-1)+fib2(n-2);&#125; 相关题目–青蛙跳台阶 一只青蛙一次可以跳上1级台阶，也可以跳上2级。求该青蛙跳上一个n级的台阶总共有多少种跳法。 到达1级台阶只有1种可能，到达2级台阶有2种可能；可记为f(1) = 1,f(2) = 2。要到达3级台阶，可以选择在1级台阶处起跳，也可以选择在2级台阶处起跳，所以只需求到达1级台阶的可能情况 + 到达2级台阶的可能情况，即f(3) = f(2) +f(1) 同理到达n级台阶，可以在n-1级台阶起跳，也可在n-2级台阶起跳，f(n) = f(n-2)+f(n-1) 可以看做是斐波那契数列。 12345678910111213141516public class JumpFloor&#123; public static int jumpFloor(int target)&#123; if(target&lt;=0) return 0; if(target == 1) return 1; int a = 1; int b = 2; while(target&gt;1)&#123; b = a + b; a = b - a; target --; &#125; return a; &#125;&#125; 这道题还有扩展，如下 一只青蛙一次可以跳上1级台阶，也可以跳上2级……它也可以跳上n级。求该青蛙跳上一个n级的台阶总共有多少种跳法。 注意和上题的区别。 到达1级台阶只有1种可能，到达2级台阶有2种可能；可记为f(1) = 1,f(2) = 2。要到达3级台阶，可以选择在1级台阶处起跳，也可以选择在2级台阶处起跳，也可直接跳到3级，所以只需求到达1级台阶的可能情况 + 到达2级台阶的可能情况 + 1，即f(3) = f(2) +f(1) + 1同理到达n级台阶，可以在n-1级台阶起跳，可在n-2、n-1、n-3…级台阶起跳，f(n) = f(n-1)+f(n-2)+f(n-3)…+1,如果令f(n-n) = f(0) = 1,上式可表示为f(n) = f(n-1)+f(n-2)+f(n-3)…+f(n-n)，有了通项公式找出规律也不是难事了，不过还有种更好理解的思路：前n-1级台阶，每级台阶都有两种选择——跳到此或不跳到此，对于最后一级n级，没得选择，必须跳到这里，所以总共有有2^(n-1)种跳法。 矩形覆盖问题 我们可以用21的小矩形横着或者竖着去覆盖更大的矩形。请问用n个21的小矩形无重叠地覆盖一个2*n的大矩形，总共有多少种方法？ 这个问题本质还是斐波那契数列… 覆盖2*n的矩形的方法记为f(n)。 当最后一步是竖着放时候，说明前一步已经覆盖了2*(n-1)，记为f(n - 1) 当最后一步是横着放的时候，倒数第二次也必然是横着放的。这个状态已经覆盖了2* (n-2)，记为f(n - 2) 因为最后一步只有横竖放两种可能，所以将上述两种方法可能性加起来即可。 覆盖2*1的矩形只有1种方法，覆盖2*2的矩形有横竖2种方法。于是f(1) = 1, f(2) = 2 这和能跳1级也能跳2级的青蛙是一样的。代码直接copy过来就行！]]></content>
+      <categories>
+        <category>剑指offer</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+        <tag>面试</tag>
+        <tag>剑指offer</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[剑指offer面试题9--两个栈实现队列]]></title>
     <url>%2F2019%2F09%2F17%2F%E5%89%91%E6%8C%87offer%E9%9D%A2%E8%AF%95%E9%A2%989-%E4%B8%A4%E4%B8%AA%E6%A0%88%E5%AE%9E%E7%8E%B0%E9%98%9F%E5%88%97%2F</url>
     <content type="text"><![CDATA[剑指offer面试题9–两个栈实现队列 用两个栈来实现一个队列，完成队列的push和pop操作。队列中的元素为int类型。 刚开始两个栈都是空的，要进队列，可以将元素压入任何一个栈，不妨就压入stack1中，我们知道元素在栈中是后进先出的，因此要出列需要删除stack1最底部的元素，此时stack2派上用场了，将stack1的元素再压入stack2中，现在元素的排列变成了原来插入的顺序，要出列的元素到了栈顶，要完成出列操作就很方便了。若要继续出列，只要stack2不为空，只需继续从stack2中出栈即可，因为stack2中的栈顶元素就是最先入列的元素。若stack2为空，就将stack1中的元素压入到stack2后，再弹出栈顶元素。如果要入列，就直接压入stack1中。 总结一下就是： stack1专门用于进入队列 stack2专门用于出队列 出列操作。stack2不为空就直接出列；为空就将stack1中所有元素压入stack2中，再弹出栈顶元素。 123456789101112131415161718192021public class TwoStackImpQueue&#123; private LinkedList&lt;Integer&gt; stack1 = new LinkedList&lt;&gt;(); private LinkedList&lt;Integer&gt; stack2 = new LinkedList&lt;&gt;(); public void enqueue(int node)&#123; // stack1专门用于进入队列 stack1.push(node); &#125; public int dequeue()&#123; if(stack1.isEmpty() &amp;&amp;stack2.isEmpty())&#123; throw new RuntimeException("队列为空"); &#125; if(stack2.isEmpty())&#123; while(!stack1.isEmpty())&#123; stack2.push(stack1.pop()); &#125; &#125; return stack2.pop(); &#125;&#125; 相关题目–两个队列实现栈刚开始两个队列都为空，进栈时，可以进入任意一个队列。不妨默认进入Queue a。后续进栈时操作，哪个队列不为空（将看到，另外一个队列肯定为空）就进入该队列中。出栈操作，最后进入队列的要先出栈，而此时要出栈的元素在队列最后，但是队列只支持在队列头删除，因此将除了最后一个元素之外的所有元素都删除并复制一份到另一个队列Queue another，然后出列最后一个元素即可。此时Queue a成了空队列。之后每次出列操作都像上述以样：将不为空的队列中除最后一个元素的其余元素删除并复制到另一个空队列中，再删除原队列中唯一一个元素并弹出。每次出栈操作后，总有一个队列是空的。又因为进栈时也是进入不为空的那个队列，因此进出栈操作时总有一个队列是空的。 这两个队列不像上面的例子中有明确的分工，在两个队列实现栈的例子中，它们交替实现进栈或出栈的功能。 总结一下： 进栈，进入不为空的那个队列中 出栈，将不为空队列中除倒数最后一个元素外的其余元素移动到另一个空队列中，紧接着弹出原队列的最后一个元素。 1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162import java.util.LinkedList;import java.util.Queue;/** * 两个队列实现一个栈 */public class TwoQueueImpStack &#123; private Queue&lt;Integer&gt; a; private Queue&lt;Integer&gt; another; public TwoQueueImpStack() &#123; this.a = new LinkedList&lt;&gt;(); this.another = new LinkedList&lt;&gt;(); &#125; public void push(int node) &#123; if (a.isEmpty() &amp;&amp; another.isEmpty()) &#123; a.offer(node); &#125; else if (!a.isEmpty())&#123; a.offer(node); &#125; else &#123; another.offer(node); &#125; &#125; public int pop() &#123; if (a.isEmpty() &amp;&amp; another.isEmpty()) &#123; throw new RuntimeException("栈已空"); &#125; if (!another.isEmpty()) &#123; int size = another.size(); // 除了最后一个元素，其他都删除并复制到另外一个队列中 for (int i = 0; i &lt; size - 1; i++) &#123; a.offer(another.poll()); &#125; return another.poll(); &#125; else &#123; int size = a.size(); for (int i = 0; i &lt; size -1; i++) &#123; another.offer(a.poll()); &#125; return a.poll(); &#125; &#125; public static void main(String[] args) &#123; TwoQueueImpStack a = new TwoQueueImpStack(); a.push(54); a.push(55); a.push(56); System.out.println(a.pop()); System.out.println(a.pop()); a.push(53); System.out.println(a.pop()); a.push(52); System.out.println(a.pop()); System.out.println(a.pop()); &#125;&#125;]]></content>
