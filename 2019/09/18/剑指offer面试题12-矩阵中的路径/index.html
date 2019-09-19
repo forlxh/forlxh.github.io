@@ -86,18 +86,18 @@
 
 
 
-<meta name="description" content="这是一个个人博客，主要是个人平时学习的一个知识积累，做笔记的一个平台">
+<meta name="description" content="剑指offer面试题12–矩阵中的路径 请设计一个函数，用来判断在一个矩阵中是否存在一条包含某字符串所有字符的路径。路径可以从矩阵中的任意一个格子开始，每一步可以在矩阵中向左，向右，向上，向下移动一个格子。如果一条路径经过了矩阵中的某一个格子，则该路径不能再进入该格子。 例如下面矩阵 a b t g    c f c s    j d e h 包含一条字符串”bfce”的路径，但是矩阵中不包含”a">
 <meta name="keywords" content="剑指offer,java,面试">
 <meta property="og:type" content="article">
 <meta property="og:title" content="剑指offer面试题12--矩阵中的路径">
 <meta property="og:url" content="http://forlxh.com/2019/09/18/剑指offer面试题12-矩阵中的路径/index.html">
 <meta property="og:site_name" content="香槟伴乐透">
-<meta property="og:description" content="这是一个个人博客，主要是个人平时学习的一个知识积累，做笔记的一个平台">
+<meta property="og:description" content="剑指offer面试题12–矩阵中的路径 请设计一个函数，用来判断在一个矩阵中是否存在一条包含某字符串所有字符的路径。路径可以从矩阵中的任意一个格子开始，每一步可以在矩阵中向左，向右，向上，向下移动一个格子。如果一条路径经过了矩阵中的某一个格子，则该路径不能再进入该格子。 例如下面矩阵 a b t g    c f c s    j d e h 包含一条字符串”bfce”的路径，但是矩阵中不包含”a">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-09-18T01:36:31.408Z">
+<meta property="og:updated_time" content="2019-09-19T04:04:39.738Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="剑指offer面试题12--矩阵中的路径">
-<meta name="twitter:description" content="这是一个个人博客，主要是个人平时学习的一个知识积累，做笔记的一个平台">
+<meta name="twitter:description" content="剑指offer面试题12–矩阵中的路径 请设计一个函数，用来判断在一个矩阵中是否存在一条包含某字符串所有字符的路径。路径可以从矩阵中的任意一个格子开始，每一步可以在矩阵中向左，向右，向上，向下移动一个格子。如果一条路径经过了矩阵中的某一个格子，则该路径不能再进入该格子。 例如下面矩阵 a b t g    c f c s    j d e h 包含一条字符串”bfce”的路径，但是矩阵中不包含”a">
 
 
 
@@ -380,7 +380,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  0
+                  1.2k
                 </span>
               
 
@@ -396,7 +396,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1
+                  4
                 </span>
               
             </div>
@@ -417,7 +417,21 @@
       
 
       
-        
+        <h3 id="剑指offer面试题12–矩阵中的路径"><a href="#剑指offer面试题12–矩阵中的路径" class="headerlink" title="剑指offer面试题12–矩阵中的路径"></a>剑指offer面试题12–矩阵中的路径</h3><blockquote>
+<p><strong>请设计一个函数，用来判断在一个矩阵中是否存在一条包含某字符串所有字符的路径。路径可以从矩阵中的任意一个格子开始，每一步可以在矩阵中向左，向右，向上，向下移动一个格子。如果一条路径经过了矩阵中的某一个格子，则该路径不能再进入该格子。 例如下面矩阵</strong></p>
+<p><strong>a b t g</strong><br>    <strong>c f c s</strong><br>    <strong>j d e h</strong></p>
+<p><strong>包含一条字符串”bfce”的路径，但是矩阵中不包含”abfb”路径，因为字符串的第一个字符b占据了矩阵中的第一行第二个格子之后，路径不能再次进入该格子。</strong></p>
+</blockquote>
+<p>这有点像图的深度优先搜索。除了矩阵边界，每个点都可以在4个方向上选择任意一个前进。当某一条路径失败后，需要回溯到上一次选择处，选择另一个方向再尝试。如果该处的方向都被尝试过了，继续回溯到上次选择处…每一次选择都会来到一个新的格子，在这个格子处又有若干个方向可选择，就这样不断前进、回溯、再前进，直到找到一条满足要求的路径为止；如果所有点都作为起点搜索一遍后还是没有找到满足要求的路径，说明在这个矩阵中不存在该条路径。</p>
+<p>上面的描述，使用递归比较好理解。还有一点需要注意，由于路径上访问过的点不能进入第二次，所以需要一个<code>boolean[] marked</code>标记那些<strong>当前路径上被访问过的点</strong>。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> Chap2;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">PathIn2DArray</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">hasPath</span><span class="params">(<span class="keyword">char</span>[] matrix, <span class="keyword">int</span> rows, <span class="keyword">int</span> cols, <span class="keyword">char</span>[] str)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (matrix == <span class="keyword">null</span> || rows &lt;= <span class="number">0</span>|| cols &lt;=<span class="number">0</span> || str == <span class="keyword">null</span>) <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">        <span class="comment">// 用于将当前路径上的访问过的点标记为“已访问”，防止同一个点访问两次</span></span><br><span class="line">        <span class="keyword">boolean</span>[] marked = <span class="keyword">new</span> <span class="keyword">boolean</span>[matrix.length];</span><br><span class="line">        <span class="comment">// 所有点都作为起点搜索一次</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> row = <span class="number">0</span>; row &lt; rows; row++) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> col = <span class="number">0</span>; col &lt; cols; col++) &#123;</span><br><span class="line">                <span class="keyword">if</span> (hasPathTo(matrix, rows, cols, row, col, str, <span class="number">0</span>, marked)) &#123;</span><br><span class="line">                    <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">boolean</span> <span class="title">hasPathTo</span><span class="params">(<span class="keyword">char</span>[] matrix, <span class="keyword">int</span> rows, <span class="keyword">int</span> cols, <span class="keyword">int</span> row, <span class="keyword">int</span> col, <span class="keyword">char</span>[] str, <span class="keyword">int</span> len, <span class="keyword">boolean</span>[] marked)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">      	<span class="comment">// 由于用一维数组表示二维矩阵，第row行第col列，就是row * cols + col</span></span><br><span class="line">        <span class="keyword">int</span> index = row * cols + col;</span><br><span class="line">        <span class="keyword">if</span> (row &lt; <span class="number">0</span> || row &gt;= rows || col &lt; <span class="number">0</span> || col &gt;= cols || matrix[index] != str[len] || marked[index]) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 递归深度能到字符串末尾，说明有这条路径</span></span><br><span class="line">        <span class="keyword">if</span> (len == str.length - <span class="number">1</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        marked[index] = <span class="keyword">true</span>;</span><br><span class="line">        <span class="comment">// 四个方向上有没有可以到达下一个字符的路径，有任意一个方向可以就继续下一个字符的搜索</span></span><br><span class="line">        <span class="keyword">if</span> (hasPathTo(matrix, rows, cols, row, col - <span class="number">1</span>, str, len + <span class="number">1</span>, marked) ||</span><br><span class="line">                hasPathTo(matrix, rows, cols, row - <span class="number">1</span>, col, str, len + <span class="number">1</span>, marked) ||</span><br><span class="line">                hasPathTo(matrix, rows, cols, row, col + <span class="number">1</span>, str, len + <span class="number">1</span>, marked) ||</span><br><span class="line">                hasPathTo(matrix, rows, cols, row + <span class="number">1</span>, col, str, len + <span class="number">1</span>, marked)) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 对于搜索失败需要回溯的路径上的点，则要重新标记为“未访问”，方便另辟蹊径时能访问到</span></span><br><span class="line">        marked[index] = <span class="keyword">false</span>;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>递归方法<code>hasPathTo</code>中有个参数len，它表示当前递归的深度。第一次调用传入0，之后在其基础上的每一次递归调用len都会加1，递归的深度也反映了当前路径上有几个字符匹配相等了。能<strong>绕过</strong>下面的if判断，说明当前字符匹配相等了。接下来判断递归深度是否到达字符串末尾，比如字符串<code>abc</code>，第一次调用hasPath（传入len为0，递归深度为0）绕过了第一个if，说明字符a已经匹配相等，再判断<code>len == str.length - 1</code>不通过；再次递归，此时深度为1，绕过了第一个if，说明字符b已经匹配相等，再判断<code>len == str.length - 1</code>不通过；再次递归，此时深度为2，绕过了第一个if，说明字符c已经匹配相等，所有字符匹配相等，因此再次判断<code>len == str.length - 1</code>通过，应该返回true.</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (row &lt; <span class="number">0</span> || row &gt;= rows || col &lt; <span class="number">0</span> || col &gt;= cols || matrix[index] != str[len] || marked[index]) &#123;</span><br><span class="line">	<span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 递归深度能到字符串末尾，说明有这条路径</span></span><br><span class="line"><span class="keyword">if</span> (len == str.length - <span class="number">1</span>) &#123;</span><br><span class="line">  	<span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>还有注意：四个方向搜索不是同时发生的，当某一个方向搜索失败后，会退回来进行下一个方向的搜索，回溯法就体现在此。</p>
+<p>当搜索失败时，别忘了<code>marked[index] = false;</code>，将搜索失败路径上点重新标记为“未访问”，以便回溯后选择其他方向继续前进时能再次访问到这些点。</p>
+
       
     </div>
     
@@ -489,6 +503,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/09/19/剑指offer面试题13-机器人的运动范围/" rel="prev" title="剑指offer面试题13--机器人的运动范围">
+                剑指offer面试题13--机器人的运动范围 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -566,8 +584,17 @@ var jiathis_config={
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -584,7 +611,7 @@ var jiathis_config={
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">17</span>
+                  <span class="site-state-item-count">18</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -639,6 +666,22 @@ var jiathis_config={
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#剑指offer面试题12–矩阵中的路径"><span class="nav-number">1.</span> <span class="nav-text">剑指offer面试题12–矩阵中的路径</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
