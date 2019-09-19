@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[UML类图]]></title>
+    <url>%2F2019%2F09%2F19%2FUML%E7%B1%BB%E5%9B%BE%2F</url>
+    <content type="text"><![CDATA[UML类图的相关知识泛化关系(generalization)类的继承结构表现在UML中为：泛化(generalize)与实现(realize)： 继承关系为 is-a的关系；两个对象之间如果可以用 is-a 来表示，就是继承关系：（..是..) eg：自行车是车、猫是动物 泛化关系用一条带空心箭头的直接表示；如下图表示（A继承自B） 实现关系(realize)实现关系用一条带空心箭头的虚线表示； eg：”车”为一个抽象概念，在现实中并无法直接用来定义对象；只有指明具体的子类(汽车还是自行车)，才 可以用来定义对象（”车”这个类在C++中用抽象类表示，在JAVA中有接口这个概念，更容易理解） 聚合关系(aggregation)聚合关系用一条带空心菱形箭头的直线表示，如下图表示A聚合到B上，或者说B由A组成。 聚合关系用于表示实体对象之间的关系，表示整体由部分构成的语义；例如一个部门由多个员工组成。 与组合关系不同的是，整体和部分不是强依赖的，即使整体不存在了，部分仍然存在；例如， 部门撤销了，人员不会消失，他们依然存在。 组合关系(composition)组合关系用一条带实心菱形箭头直线表示，如下图表示A组成B，或者B由A组成。 与聚合关系一样，组合关系同样表示整体由部分构成的语义；比如公司由多个部门组成。 但组合关系是一种强依赖的特殊聚合关系，如果整体不存在了，则部分也不存在了；例如， 公司不存在了，部门也将不存在了。 关联关系(association)关联关系是用一条直线表示的；它描述不同类的对象之间的结构关系；==它是一种静态关系， 通常与运行状态无关，一般由常识等因素决定的==；它一般用来定义对象之间静态的、天然的结构； 所以，关联关系是一种“强关联”的关系； 比如，乘车人和车票之间就是一种关联关系；学生和学校就是一种关联关系； ==关联关系默认不强调方向，表示对象间相互知道==；如果特别强调方向，如下图，表示A知道B，但 B不知道A； 注：在最终代码中，关联对象通常是以==成员变量的形式==实现的； 依赖关系(dependency)依赖关系是用一套带箭头的虚线表示的；如下图表示A依赖于B；他描述一个对象在运行期间会用到另一个对象的关系； 与关联关系不同的是，==它是一种临时性的关系==，通常在运行期间产生，并且随着运行时的变化； 依赖关系也可能发生变化； 显然，依赖也有方向，双向依赖是一种非常糟糕的结构，我们总是应该保持单向依赖，杜绝双向依赖的产生； 注：在最终代码中，依赖关系体现为类构造方法及类方法的==传入参数==，箭头的指向为调用关系；依赖关系除了临时知道对方外，还是==“使用”对方的方法和属性==； 类的表示：矩形框：代表一个类，类图分三层第一层显示类的名称：抽象类用斜体 第二层是类的特性：字段和属性 第三层是类的操作：方法或行为（+:public；-:private；#:protected，~:default（可省略）） ​ 斜体代表抽象，下划线代表静态 接口的表示：矩形框，顶部有《interface》]]></content>
+      <categories>
+        <category>设计模式</category>
+      </categories>
+      <tags>
+        <tag>设计模式</tag>
+        <tag>java</tag>
+        <tag>面试</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[剑指offer面试题13--机器人的运动范围]]></title>
     <url>%2F2019%2F09%2F19%2F%E5%89%91%E6%8C%87offer%E9%9D%A2%E8%AF%95%E9%A2%9813-%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%9A%84%E8%BF%90%E5%8A%A8%E8%8C%83%E5%9B%B4%2F</url>
     <content type="text"><![CDATA[剑指offer面试题13–机器人的运动范围 地上有一个m行和n列的方格。一个机器人从坐标0,0的格子开始移动，每一次只能向左，右，上，下四个方向移动一格，但是不能进入行坐标和列坐标的数位之和大于k的格子。 例如，当k为18时，机器人能够进入方格（35,37），因为3+5+3+7 = 18。但是，它不能进入方格（35,38），因为3+5+3+8 = 19。请问该机器人能够达到多少个格子？ 此题和面试题12——矩阵中的路径有相似之处，依然是回溯法。每来到一个新的且满足条件的格子时，计数加1。除矩形的边界外，任意一个方格都有四个方向可以选择，选择任一方向后来到新的格子又可以选择四个方向，但是一个到达过的格子不能进入两次，因为这将导致对同一个格子的重复计数。也就是说，一个格子一旦满足条件进入后，就被永久标记为“访问过”，一个满足条件的格子只能使计数值加1。这是和面试题12有区别的地方（那个例子中是搜索路径，失败路径上的点要重新标记为“未访问”，因为另开辟的新路径需要探索这些点）。 这道题用通俗的话来讲就是：m行n列的所有方格中，有多少个满足行坐标和列坐标的数位之和小于等于门限值k的格子？ 代码和面试题12长得有点像，但是两个问题是有明显区别的！ 12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061package Chap2;public class RobotMove &#123; public int movingCount(int threshold, int rows, int cols) &#123; if (rows &lt;= 0 || cols &lt;= 0 || threshold &lt; 0) &#123; return 0; &#125; boolean[] marked = new boolean[rows * cols]; // 从(0, 0)处开始 return move(0, 0, threshold, rows, cols, marked); &#125; /** * 递归方法，每到一个格子就四个方向搜索 * * @param row 当前行 * @param col 当前列 * @param threshold 门限值 * @param rows 总行数 * @param cols 总列数 * @param marked 是否访问过 * @return 当前格子数(等于1)加上4个方向能访问到的格子数的总和 */ private int move(int row, int col, int threshold, int rows, int cols, boolean[] marked) &#123; int count = 0; if (checked(row, col, threshold, rows, cols, marked)) &#123; marked[row * cols + col] = true; // 递归对四个方向计数，注意四个方向的搜索不是同时发生， count = move(row - 1, col, threshold, rows, cols, marked) + move(row + 1, col, threshold, rows, cols, marked) + move(row, col - 1, threshold, rows, cols, marked) + move(row, col + 1, threshold, rows, cols, marked) + 1; &#125; return count; &#125; /** * 判断当前格子是否超过门限值，以及边界值的判断 * * @return true如果当前格子满足条件 */ private boolean checked(int row, int col, int threshold, int rows, int cols, boolean[] marked) &#123; return row &gt;= 0 &amp;&amp; row &lt; rows &amp;&amp; col &gt;= 0 &amp;&amp; col &lt; cols &amp;&amp; !marked[row * cols + col] &amp;&amp; digitSum(row) + digitSum(col) &lt;= threshold; &#125; /** * 比如数字1234,每位数相加的和将返回10 * @param number 某数字 * @return 该数字的数位之和 */ private int digitSum(int number) &#123; int sum = 0; while (number &gt; 0) &#123; sum += number % 10; number /= 10; &#125; return sum; &#125;&#125; checked方法用于判断当前坐标是否满足边界条件，是否超过门限值。 递归方法move是核心，注意递归对四个方向计数时，四个方向的搜索不是同时发生的，一个方向搜索失败（遇到边界或超过门限值）后，退回来进行下一个方向的搜索，回溯法就体现在此。]]></content>
@@ -8,9 +21,9 @@
         <category>剑指offer</category>
       </categories>
       <tags>
-        <tag>剑指offer</tag>
         <tag>java</tag>
         <tag>面试</tag>
+        <tag>剑指offer</tag>
       </tags>
   </entry>
   <entry>
@@ -21,9 +34,9 @@
         <category>剑指offer</category>
       </categories>
       <tags>
-        <tag>剑指offer</tag>
         <tag>java</tag>
         <tag>面试</tag>
+        <tag>剑指offer</tag>
       </tags>
   </entry>
   <entry>
@@ -34,9 +47,9 @@
         <category>剑指offer</category>
       </categories>
       <tags>
-        <tag>剑指offer</tag>
         <tag>java</tag>
         <tag>面试</tag>
+        <tag>剑指offer</tag>
       </tags>
   </entry>
   <entry>
@@ -47,9 +60,9 @@
         <category>剑指offer</category>
       </categories>
       <tags>
-        <tag>剑指offer</tag>
         <tag>java</tag>
         <tag>面试</tag>
+        <tag>剑指offer</tag>
       </tags>
   </entry>
   <entry>
@@ -60,9 +73,9 @@
         <category>剑指offer</category>
       </categories>
       <tags>
-        <tag>剑指offer</tag>
         <tag>java</tag>
         <tag>面试</tag>
+        <tag>剑指offer</tag>
       </tags>
   </entry>
   <entry>
@@ -73,9 +86,9 @@
         <category>剑指offer</category>
       </categories>
       <tags>
-        <tag>剑指offer</tag>
         <tag>java</tag>
         <tag>面试</tag>
+        <tag>剑指offer</tag>
       </tags>
   </entry>
   <entry>
@@ -86,9 +99,9 @@
         <category>剑指offer</category>
       </categories>
       <tags>
-        <tag>剑指offer</tag>
         <tag>java</tag>
         <tag>面试</tag>
+        <tag>剑指offer</tag>
       </tags>
   </entry>
   <entry>
@@ -99,9 +112,9 @@
         <category>剑指offer</category>
       </categories>
       <tags>
-        <tag>剑指offer</tag>
         <tag>java</tag>
         <tag>面试</tag>
+        <tag>剑指offer</tag>
       </tags>
   </entry>
   <entry>
@@ -112,9 +125,9 @@
         <category>剑指offer</category>
       </categories>
       <tags>
-        <tag>剑指offer</tag>
         <tag>java</tag>
         <tag>面试</tag>
+        <tag>剑指offer</tag>
       </tags>
   </entry>
   <entry>
@@ -125,9 +138,9 @@
         <category>剑指offer</category>
       </categories>
       <tags>
-        <tag>剑指offer</tag>
         <tag>java</tag>
         <tag>面试</tag>
+        <tag>剑指offer</tag>
       </tags>
   </entry>
   <entry>
@@ -138,9 +151,9 @@
         <category>剑指offer</category>
       </categories>
       <tags>
-        <tag>剑指offer</tag>
         <tag>java</tag>
         <tag>面试</tag>
+        <tag>剑指offer</tag>
       </tags>
   </entry>
   <entry>
@@ -151,9 +164,9 @@
         <category>设计模式</category>
       </categories>
       <tags>
+        <tag>设计模式</tag>
         <tag>java</tag>
         <tag>面试</tag>
-        <tag>设计模式</tag>
       </tags>
   </entry>
   <entry>

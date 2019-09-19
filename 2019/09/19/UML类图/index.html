@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="java,面试,剑指offer,">
+  <meta name="keywords" content="设计模式,java,面试,">
 
 
 
@@ -86,18 +86,25 @@
 
 
 
-<meta name="description" content="剑指offer面试题6–从尾到头打印链表 输入一个链表的头节点，从尾到头打印链表每个节点的值。  使用栈我的做法：典型的后进先出，使用栈，顺序遍历一遍链表，依次将每个值入栈。得到的就是尾节点在前，头节点在后的列表。 123456789101112131415161718192021222324252627282930package Chap2;import java.util.LinkedList">
-<meta name="keywords" content="java,面试,剑指offer">
+<meta name="description" content="UML类图的相关知识泛化关系(generalization)类的继承结构表现在UML中为：泛化(generalize)与实现(realize)： 继承关系为 is-a的关系；两个对象之间如果可以用 is-a 来表示，就是继承关系：（..是..) eg：自行车是车、猫是动物 泛化关系用一条带空心箭头的直接表示；如下图表示（A继承自B）   实现关系(realize)实现关系用一条带空心箭头的虚线表示">
+<meta name="keywords" content="设计模式,java,面试">
 <meta property="og:type" content="article">
-<meta property="og:title" content="剑指offer面试题6--从尾到头打印链表">
-<meta property="og:url" content="http://forlxh.com/2019/09/17/剑指offer面试题6-从尾到头打印链表/index.html">
+<meta property="og:title" content="UML类图">
+<meta property="og:url" content="http://forlxh.com/2019/09/19/UML类图/index.html">
 <meta property="og:site_name" content="香槟伴乐透">
-<meta property="og:description" content="剑指offer面试题6–从尾到头打印链表 输入一个链表的头节点，从尾到头打印链表每个节点的值。  使用栈我的做法：典型的后进先出，使用栈，顺序遍历一遍链表，依次将每个值入栈。得到的就是尾节点在前，头节点在后的列表。 123456789101112131415161718192021222324252627282930package Chap2;import java.util.LinkedList">
+<meta property="og:description" content="UML类图的相关知识泛化关系(generalization)类的继承结构表现在UML中为：泛化(generalize)与实现(realize)： 继承关系为 is-a的关系；两个对象之间如果可以用 is-a 来表示，就是继承关系：（..是..) eg：自行车是车、猫是动物 泛化关系用一条带空心箭头的直接表示；如下图表示（A继承自B）   实现关系(realize)实现关系用一条带空心箭头的虚线表示">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-09-17T15:13:05.478Z">
+<meta property="og:image" content="http://forlxh.com/.com//09/19/UML类图/generalization.png">
+<meta property="og:image" content="http://forlxh.com/.com//C:%5CUsers%5C20344%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1566289994586.png">
+<meta property="og:image" content="http://forlxh.com/.com//C:%5CUsers%5C20344%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1566290095005.png">
+<meta property="og:image" content="http://forlxh.com/.com//C:%5CUsers%5C20344%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1566290178269.png">
+<meta property="og:image" content="http://forlxh.com/.com//C:%5CUsers%5C20344%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1566290337454.png">
+<meta property="og:image" content="http://forlxh.com/.com//C:%5CUsers%5C20344%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1566290440373.png">
+<meta property="og:updated_time" content="2019-09-19T04:22:05.602Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="剑指offer面试题6--从尾到头打印链表">
-<meta name="twitter:description" content="剑指offer面试题6–从尾到头打印链表 输入一个链表的头节点，从尾到头打印链表每个节点的值。  使用栈我的做法：典型的后进先出，使用栈，顺序遍历一遍链表，依次将每个值入栈。得到的就是尾节点在前，头节点在后的列表。 123456789101112131415161718192021222324252627282930package Chap2;import java.util.LinkedList">
+<meta name="twitter:title" content="UML类图">
+<meta name="twitter:description" content="UML类图的相关知识泛化关系(generalization)类的继承结构表现在UML中为：泛化(generalize)与实现(realize)： 继承关系为 is-a的关系；两个对象之间如果可以用 is-a 来表示，就是继承关系：（..是..) eg：自行车是车、猫是动物 泛化关系用一条带空心箭头的直接表示；如下图表示（A继承自B）   实现关系(realize)实现关系用一条带空心箭头的虚线表示">
+<meta name="twitter:image" content="http://forlxh.com/.com//09/19/UML类图/generalization.png">
 
 
 
@@ -127,13 +134,13 @@
 
 
 
-  <link rel="canonical" href="http://forlxh.com/2019/09/17/剑指offer面试题6-从尾到头打印链表/">
+  <link rel="canonical" href="http://forlxh.com/2019/09/19/UML类图/">
 
 
 
 
 
-  <title>剑指offer面试题6--从尾到头打印链表 | 香槟伴乐透</title>
+  <title>UML类图 | 香槟伴乐透</title>
   
 
 
@@ -292,7 +299,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://forlxh.com/2019/09/17/剑指offer面试题6-从尾到头打印链表/">
+    <link itemprop="mainEntityOfPage" href="http://forlxh.com/2019/09/19/UML类图/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="forlxh">
@@ -309,7 +316,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">剑指offer面试题6--从尾到头打印链表</h1>
+          <h1 class="post-title" itemprop="name headline">UML类图</h1>
         
 
         <div class="post-meta">
@@ -321,8 +328,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-17T17:19:47+08:00">
-                2019-09-17
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-19T12:17:19+08:00">
+                2019-09-19
               </time>
             
 
@@ -344,8 +351,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/剑指offer/" itemprop="url" rel="index">
-                    <span itemprop="name">剑指offer</span>
+                  <a href="/categories/设计模式/" itemprop="url" rel="index">
+                    <span itemprop="name">设计模式</span>
                   </a>
                 </span>
 
@@ -380,7 +387,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  471
+                  951
                 </span>
               
 
@@ -396,7 +403,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1
+                  3
                 </span>
               
             </div>
@@ -417,20 +424,39 @@
       
 
       
-        <h3 id="剑指offer面试题6–从尾到头打印链表"><a href="#剑指offer面试题6–从尾到头打印链表" class="headerlink" title="剑指offer面试题6–从尾到头打印链表"></a>剑指offer面试题6–从尾到头打印链表</h3><blockquote>
-<p><strong>输入一个链表的头节点，从尾到头打印链表每个节点的值。</strong></p>
-</blockquote>
-<h4 id="使用栈"><a href="#使用栈" class="headerlink" title="使用栈"></a>使用栈</h4><p>我的做法：典型的后进先出，使用栈，顺序遍历一遍链表，依次将每个值入栈。得到的就是尾节点在前，头节点在后的列表。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> Chap2;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.LinkedList;</span><br><span class="line"><span class="keyword">import</span> java.util.ArrayList;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">FromTail2Head</span> </span>&#123;</span><br><span class="line">    <span class="comment">// 节点类的定义</span></span><br><span class="line">    <span class="keyword">private</span> <span class="class"><span class="keyword">class</span> <span class="title">ListNode</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> val;</span><br><span class="line">        ListNode next = <span class="keyword">null</span>;</span><br><span class="line"></span><br><span class="line">        ListNode(<span class="keyword">int</span> val) &#123;</span><br><span class="line">            <span class="keyword">this</span>.val = val;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 更推荐使用栈，正序压入，尾节点就在最前面了</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> listNode 链表的头结点</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> 从尾到头排列的结点</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> ArrayList&lt;Integer&gt; <span class="title">printListFromTailToHead</span><span class="params">(ListNode listNode)</span> </span>&#123;</span><br><span class="line">        LinkedList&lt;Integer&gt; stack = <span class="keyword">new</span> LinkedList&lt;&gt;();</span><br><span class="line">        <span class="keyword">for</span> (ListNode node = listNode; node != <span class="keyword">null</span>; node = node.next) &#123;</span><br><span class="line">            stack.push(node.val);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> ArrayList&lt;&gt;(stack);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <h4 id="UML类图的相关知识"><a href="#UML类图的相关知识" class="headerlink" title="UML类图的相关知识"></a>UML类图的相关知识</h4><h5 id="泛化关系-generalization"><a href="#泛化关系-generalization" class="headerlink" title="泛化关系(generalization)"></a>泛化关系(generalization)</h5><p>类的继承结构表现在UML中为：泛化(generalize)与实现(realize)：</p>
+<p>继承关系为 is-a的关系；两个对象之间如果可以用 is-a 来表示，就是继承关系：（..是..)</p>
+<p>eg：自行车是车、猫是动物</p>
+<p>泛化关系用一条带空心箭头的直接表示；如下图表示（A继承自B）</p>
+<img src="/.com//09/19/UML类图/generalization.png" title="generalization">
 
-<p>使用了“万能的”LinkedList，将其当栈使用。</p>
-<h4 id="使用递归"><a href="#使用递归" class="headerlink" title="使用递归"></a>使用递归</h4><p>递归的本质也是栈（系统创建的），下面采用递归的解法。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 利用递归，先递归到最后一个结点后开始依次返回。链表如果很长不适合用递归，递归深度将很大</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 这是一个类成员变量</span></span><br><span class="line"><span class="keyword">private</span> ArrayList&lt;Integer&gt; a = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> ArrayList&lt;Integer&gt; <span class="title">printListFromTailToHead2</span><span class="params">(ListNode listNode)</span> </span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (listNode != <span class="keyword">null</span>) &#123;</span><br><span class="line">    printListFromTailToHead(listNode.next);</span><br><span class="line">    a.add(listNode.val);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> a;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>可以看到如果没到链表尾部，就不断递归，直到最后一个节点，之后开始返回，执行下一句add方法，此时第一个被添加的是尾节点，最后一步递归调用的返回（即第一次递归调用）将添加最开始的头节点。因此得到的也是从尾到头的列表。</p>
-<p>递归通常代码更简洁，但是如果<strong>链表很长时，递归调用的层级十分深，速度将大大降低。</strong>所以更推荐用第一种——栈的方法。</p>
+<h5 id="实现关系-realize"><a href="#实现关系-realize" class="headerlink" title="实现关系(realize)"></a>实现关系(realize)</h5><p>实现关系用一条带空心箭头的虚线表示；</p>
+<p>eg：”车”为一个抽象概念，在现实中并无法直接用来定义对象；只有指明具体的子类(汽车还是自行车)，才 可以用来定义对象（”车”这个类在C++中用抽象类表示，在JAVA中有接口这个概念，更容易理解）</p>
+<p><img src="/.com//C:%5CUsers%5C20344%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1566289994586.png" alt="1566289994586"></p>
+<h5 id="聚合关系-aggregation"><a href="#聚合关系-aggregation" class="headerlink" title="聚合关系(aggregation)"></a>聚合关系(aggregation)</h5><p>聚合关系用一条带空心菱形箭头的直线表示，如下图表示A聚合到B上，或者说B由A组成。</p>
+<p><img src="/.com//C:%5CUsers%5C20344%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1566290095005.png" alt="1566290095005"></p>
+<p>聚合关系用于表示实体对象之间的关系，表示整体由部分构成的语义；例如一个部门由多个员工组成。</p>
+<p>与组合关系不同的是，整体和部分不是强依赖的，即使整体不存在了，部分仍然存在；例如， 部门撤销了，人员不会消失，他们依然存在。</p>
+<h5 id="组合关系-composition"><a href="#组合关系-composition" class="headerlink" title="组合关系(composition)"></a>组合关系(composition)</h5><p>组合关系用一条带实心菱形箭头直线表示，如下图表示A组成B，或者B由A组成。</p>
+<p><img src="/.com//C:%5CUsers%5C20344%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1566290178269.png" alt="1566290178269"></p>
+<p>与聚合关系一样，组合关系同样表示整体由部分构成的语义；比如公司由多个部门组成。</p>
+<p>但组合关系是一种强依赖的特殊聚合关系，如果整体不存在了，则部分也不存在了；例如， 公司不存在了，部门也将不存在了。</p>
+<h5 id="关联关系-association"><a href="#关联关系-association" class="headerlink" title="关联关系(association)"></a>关联关系(association)</h5><p>关联关系是用一条直线表示的；它描述不同类的对象之间的结构关系；==它是一种静态关系， 通常与运行状态无关，一般由常识等因素决定的==；它一般用来定义对象之间静态的、天然的结构； 所以，关联关系是一种“强关联”的关系；</p>
+<p>比如，乘车人和车票之间就是一种关联关系；学生和学校就是一种关联关系；</p>
+<p>==关联关系默认不强调方向，表示对象间相互知道==；如果特别强调方向，如下图，表示A知道B，但 B不知道A；</p>
+<p><img src="/.com//C:%5CUsers%5C20344%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1566290337454.png" alt="1566290337454"></p>
+<p>注：在最终代码中，关联对象通常是以==成员变量的形式==实现的；</p>
+<h5 id="依赖关系-dependency"><a href="#依赖关系-dependency" class="headerlink" title="依赖关系(dependency)"></a>依赖关系(dependency)</h5><p>依赖关系是用一套带箭头的虚线表示的；如下图表示A依赖于B；他描述一个对象在运行期间会用到另一个对象的关系；</p>
+<p><img src="/.com//C:%5CUsers%5C20344%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1566290440373.png" alt="1566290440373"></p>
+<p>与关联关系不同的是，==它是一种临时性的关系==，通常在运行期间产生，并且随着运行时的变化； 依赖关系也可能发生变化；</p>
+<p>显然，依赖也有方向，双向依赖是一种非常糟糕的结构，我们总是应该保持单向依赖，杜绝双向依赖的产生；</p>
+<p>注：在最终代码中，依赖关系体现为类构造方法及类方法的==传入参数==，箭头的指向为调用关系；依赖关系除了临时知道对方外，还是==“使用”对方的方法和属性==；</p>
 <hr>
-
+<h5 id="类的表示：矩形框：代表一个类，类图分三层"><a href="#类的表示：矩形框：代表一个类，类图分三层" class="headerlink" title="类的表示：矩形框：代表一个类，类图分三层"></a>类的表示：矩形框：代表一个类，类图分三层</h5><p>第一层显示类的名称：抽象类用斜体</p>
+<p>第二层是类的特性：字段和属性</p>
+<p>第三层是类的操作：方法或行为（+:public；-:private；#:protected，~:default（可省略））    </p>
+<p>​    斜体代表抽象，下划线代表静态</p>
+<h5 id="接口的表示：矩形框，顶部有《interface》"><a href="#接口的表示：矩形框，顶部有《interface》" class="headerlink" title="接口的表示：矩形框，顶部有《interface》"></a>接口的表示：矩形框，顶部有《interface》</h5>
       
     </div>
     
@@ -476,11 +502,11 @@
       
         <div class="post-tags">
           
+            <a href="/tags/设计模式/" rel="tag"># 设计模式</a>
+          
             <a href="/tags/java/" rel="tag"># java</a>
           
             <a href="/tags/面试/" rel="tag"># 面试</a>
-          
-            <a href="/tags/剑指offer/" rel="tag"># 剑指offer</a>
           
         </div>
       
@@ -493,8 +519,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/09/17/剑指offer面试题5-替换空格/" rel="next" title="剑指offer面试题5--替换空格">
-                <i class="fa fa-chevron-left"></i> 剑指offer面试题5--替换空格
+              <a href="/2019/09/19/剑指offer面试题13-机器人的运动范围/" rel="next" title="剑指offer面试题13--机器人的运动范围">
+                <i class="fa fa-chevron-left"></i> 剑指offer面试题13--机器人的运动范围
               </a>
             
           </div>
@@ -502,10 +528,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/09/17/剑指offer面试题7-重建二叉树/" rel="prev" title="剑指offer面试题7--重建二叉树">
-                剑指offer面试题7--重建二叉树 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -675,7 +697,7 @@ var jiathis_config={
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#剑指offer面试题6–从尾到头打印链表"><span class="nav-number">1.</span> <span class="nav-text">剑指offer面试题6–从尾到头打印链表</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#使用栈"><span class="nav-number">1.1.</span> <span class="nav-text">使用栈</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#使用递归"><span class="nav-number">1.2.</span> <span class="nav-text">使用递归</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#UML类图的相关知识"><span class="nav-number">1.</span> <span class="nav-text">UML类图的相关知识</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#泛化关系-generalization"><span class="nav-number">1.1.</span> <span class="nav-text">泛化关系(generalization)</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#实现关系-realize"><span class="nav-number">1.2.</span> <span class="nav-text">实现关系(realize)</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#聚合关系-aggregation"><span class="nav-number">1.3.</span> <span class="nav-text">聚合关系(aggregation)</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#组合关系-composition"><span class="nav-number">1.4.</span> <span class="nav-text">组合关系(composition)</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#关联关系-association"><span class="nav-number">1.5.</span> <span class="nav-text">关联关系(association)</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#依赖关系-dependency"><span class="nav-number">1.6.</span> <span class="nav-text">依赖关系(dependency)</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#类的表示：矩形框：代表一个类，类图分三层"><span class="nav-number">1.7.</span> <span class="nav-text">类的表示：矩形框：代表一个类，类图分三层</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#接口的表示：矩形框，顶部有《interface》"><span class="nav-number">1.8.</span> <span class="nav-text">接口的表示：矩形框，顶部有《interface》</span></a></li></ol></li></ol></div>
             
 
           </div>
